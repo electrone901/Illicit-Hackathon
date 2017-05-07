@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<title>Illicit Hackathon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="http://www.iconsdb.com/icons/preview/orange/bank-3-xxl.png" style="width:15%;" class="w3-round"><br><br>
+    <h4><b>Menu</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#dashboard" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Dashboard</a> 
+       <a href="#deposit" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Transaction history</a> 
+    <!-- <a href="#pay" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>PAY</a>  -->
+    <a href="#transfer" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Transfer</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="dashboard">
+    <a href="#"><img src="http://www.iconsdb.com/icons/preview/orange/bank-3-xxl.png" style="width:40px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+
+    <div id="userTitle" class="w3-container">
+    <center><h3 id="userNameTitle"><b>Welcome Joey!</b></h3></center>
+    <h6 id="contact"><b>Available Credit $ 1 250</b></h6>
+    <h6 id="contact"><b>This week you spent $ 125</b></h6>
+
+
+
+
+
+
+    <!-- <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Last 30 days</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Last 6 months</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Last Year</button>
+    </div> -->
+
+
+
+
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <h6 id="contact"><b>Upcoming Bills</b></h6>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+
+    <div id="borderParagraph" class="w3-container w3-white">
+        <p ><b>Rent due in 3 days ..</b> <input id="paynowButt" type="button" value="Pay now"></p>
+    </div>
+
+    <div id="borderParagraph" class="w3-container w3-white">
+        <p ><b>Phone due in 5 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+    </div>
+
+    <div id="borderParagraph" class="w3-container w3-white">
+        <p ><b>Utility due in 8 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+    </div>
+
+      <!-- <div class="w3-container w3-white">
+        <p id="borderParagraph"><b>Rent due in 3 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+
+        <p><b>Phone due in 5 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+        <p><b>Utility due in 8 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+        <p>Utility due in 8 days</p>
+        <p>See More</p>
+      </div> -->
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+      <img id="whereismymoney" src="http://laavenidanyc.com/wp-content/uploads/2017/05/whereismymoney.png" alt="Me" style="width:100%">
+        <p><b>Lorem Ipsum 4</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+              </div>
+    </div>
+   <!--  <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 4</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+            </div>
+    </div> -->
+<!--     <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 5</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+             </div>
+    </div> -->
+  </div>
+  
+    <div class="w3-row-padding">
+   <!--  <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 6</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+              </div>
+    </div> -->
+    <!-- <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 7</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+            </div>
+    </div> -->
+    <!-- <div class="w3-third w3-container">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 8</b></p>
+ <p>Location:</p>
+        <p>Date:</p>
+             </div>
+    </div> -->
+  </div>
+<!-- <br/><br/><br/> -->
+
+  
+
+   <!-- <div id="pay"></div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <center><h2><b>Transaction history</b></h2><center>
+    <div class="w6-col m6">
+      <img src="http://image.dhgate.com/0x0/f2/albu/g2/M00/BC/FD/rBVaGlQ_LC-ALC8iAAK0B8t2l6A137.jpg" alt="Me" style="width:70%">
+    </div>
+
+    <div>
+      <div id="PaymentApple" class="w3-col m6">
+        <img src="https://lh3.ggpht.com/-65J0Ju5Ys4U/Um6RE3EssdI/AAAAAAAAAGY/PSEyE0z9gqk/s1600/credit-card-icon.png" alt="Me" style="width:30%">
+        <h3><b>Apple pay</b></h3>
+      </div>
+      <div id="PaymentAndroind" class="w3-col m6">
+        <img src="https://lh3.ggpht.com/-65J0Ju5Ys4U/Um6RE3EssdI/AAAAAAAAAGY/PSEyE0z9gqk/s1600/credit-card-icon.png" alt="Me" style="width:30%">
+        <h3><b>Android pay</b></h3>
+      </div>
+    </div>
+    
+  
+    </div> -->
+    
+
+
+  <div id="deposit"></div>
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <center><h2><b>Transaction history</b></h2><center>
+
+    
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+      <img src="http://laavenidanyc.com/wp-content/uploads/2017/05/tranferhistory.png" alt="Me" style="width:70%">
+        <p><b>Lorem Ipsum 4</b></p>
+        <p>Location:</p>
+        <p>Date:</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 4</b></p>
+        <p>Location:</p>
+        <p>Date:</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 4</b></p>
+        <p>Location:</p>
+        <p>Date:</p>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum 4</b></p>
+        <p>Location:</p>
+        <p>Date:</p>
+      </div>
+    </div>
+
+  
+    <!-- <div class="w6-col m6">
+      <img src="http://image.dhgate.com/0x0/f2/albu/g2/M00/BC/FD/rBVaGlQ_LC-ALC8iAAK0B8t2l6A137.jpg" alt="Me" style="width:70%">
+    </div> -->
+    <!-- <div class="w6-col m6">
+      <img src="http://image.dhgate.com/0x0/f2/albu/g2/M00/BC/FD/rBVaGlQ_LC-ALC8iAAK0B8t2l6A137.jpg" alt="Me" style="width:70%">
+    </div> -->
+
+    <!-- <div>
+    <br/>
+     <label>Total amount: </label><input type="text"><br/><br/>
+     <input type="button" value="Complete Deposit">
+    </div>
+ -->    
+  
+    </div>
+
+
+
+  <!-- Transfer Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h2 id="contact"><b>Transfer a Balance</b></h2>
+    <p><span><strong>Enter transfer detail </strong>Please enter the acount number of the credit card you are transfering a balance from and the amount you want to transfer. Then Click "Cotinue" to review the Terms and Conditions.</span></p>
+
+    <!-- FROM HERE  -->
+   <!--  <div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                Transfer a Balance
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="container" id="transfer">
+    <div class="jumbotron jumbotron-sm">
+        <div class="col-sm-12 col-lg-12">
+           <center><h3> Transfer a Balance</h3></center>
+        </div>
+    </div>
+
+    <div id="formStyle" class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form >
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <h5 id="contact"><b>Available Credit $ 1 250</b></h5>
+                            <label for="name">
+                                Transfer from account number</label><br/>
+                            <center><input type="text" id="creditCardInput" class="form-control" id="name" placeholder="Account number" required="required" /></center>
+                        </div><br/>
+
+                        <div class="form-group">
+                            <label for="name">
+                                Enter the routing number</label><br/>
+                            <center><input type="text" id="creditCardInput" class="form-control" id="name" placeholder="Routing number" required="required" /></center>
+                        </div><br/>
+
+                        <!-- <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <li>Rent</li>
+    <li>Utility</li>
+    <li>Phone</li>
+    <li>Other</li>
+  </div>
+</div> -->
+
+
+                        <div class="form-group">
+                            <label for="email">
+                                Transfer amount($USD)</label><br/>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" id="creditCardInput" class="form-control" id="email" placeholder="Amount" required="required" />
+                        </div>
+                    </div>
+                </div>
+                </form>
+
+
+                <p id="TransferNote"><b>Note: </b><strong>The total dollar amount of all balance transfer made by any 90-day period may not exceed 80% of your credit line.</strong></p>
+
+
+                <div >
+                        <center><button type="submit" id="continueButton">Complete Transfer</button></center>
+                </div>
+
+
+
+                
+
+            </div>
+        </div>
+       
+
+    </div>
+</div>
+
+
+   
+
+
+
+
+
+  
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+<!-- Script to get input form -->
+<script>
+ $(document).ready(function() {
+
+    var enrollType;
+  //  $("#div_id_As").hide();
+    $("input[name='As']").change(function() {
+        memberType = $("input[name='select']:checked").val();
+        providerType = $("input[name='As']:checked").val();
+    toggleIndividInfo();
+    });
+    
+    $("input[name='select']").change(function() {
+    memberType = $("input[name='select']:checked").val();
+    toggleIndividInfo();
+    toggleLearnerTrainer();
+  });
+  
+  function toggleLearnerTrainer() {
+
+  if (memberType == 'P' || enrollType=='company') {
+    $("#cityField").hide();
+    $("#providerType").show();
+    $(".provider").show();
+    $(".locationField").show();
+    if(enrollType=='INSTITUTE'){
+      $(".individ").hide();
+    }
+  
+  } 
+    else {
+    $("#providerType").hide();
+    $(".provider").hide();
+    $('#name').show();
+    $("#cityField").hide();
+    $(".locationField").show();
+    $("#instituteName").hide();
+    $("#cityField").show();
+    
+  }
+    }
+    function toggleIndividInfo(){
+
+  if(((typeof memberType!=='undefined' && memberType == 'TRAINER')||enrollType=='INSTITUTE') && providerType=='INDIVIDUAL'){
+    $("#instituteName").hide();
+    $(".individ").show();
+    $('#name').show();
+  }
+    else if((typeof memberType!=='undefined' && memberType == 'TRAINER')|| enrollType=='INSTITUTE'){
+    $('#name').hide();
+    $("#instituteName").show();
+    $(".individ").hide();
+  }
+    }
+   
+ });
+
+
+
+ /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>
