@@ -6,5 +6,6 @@ Swift Check is an application that allow its users to deposit their checks digit
 
 ![Alt text](/images/log-in.png?raw=true "Log in")
 ![Alt text](/images/dashboard.png?raw=true "My dashboard")
+
 ![Alt text](/images/transactions.png?raw=true "Transactions History")
 ![Alt text](/images/transfers.png?raw=true "Tranfer a Balance")
