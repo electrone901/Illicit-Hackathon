@@ -1,1 +1,7 @@
-# Illicit-Hackathon
+# Illicit-Hackathon: Swift Check
+
+## Description
+
+Swift Check is an application that allow its users to deposit their checks digitally through a photograph so they can have quick and easy access to their funds without the higher fees, long wait times, and general inefficiencies of traditional check cashers. We also provide our user with a debit card to make online payments.
+
+![Alt text](/images/log-in.png?raw=true "Optional Title")

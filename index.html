@@ -3,14 +3,15 @@
 <title>Illicit Hackathon</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey w3-content" style="max-width:1600px" bgcolor="red">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -33,7 +34,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+<div class="w3-main" style="margin-left:300px; background-color: rgba(0, 208, 255, 0.1)">
 
   <!-- Header -->
   <header id="dashboard">
@@ -41,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
 
     <div id="userTitle" class="w3-container">
-    <center><h3 id="userNameTitle"><b>Welcome Joey!</b></h3></center>
+    <center><h3 id="userNameTitle"><b>Welcome Dwight!</b></h3></center>
     <h6 id="contact"><b>Available Credit $ 1 250</b></h6>
     <h6 id="contact"><b>This week you spent $ 125</b></h6>
 
@@ -65,13 +66,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </header>
   
   <!-- First Photo Grid-->
-  <h6 id="contact"><b>Upcoming Bills</b></h6>
+  <h6 id="contact" class="UpcomingTittle"><b>Upcoming Bills</b></h6>
 
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
 
     <div id="borderParagraph" class="w3-container w3-white">
-        <p ><b>Rent due in 3 days ..</b> <input id="paynowButt" type="button" value="Pay now"></p>
+        <p ><b>Rent due in 3 days ...</b> <input id="paynowButt" type="button" value="Pay now"></p>
     </div>
 
     <div id="borderParagraph" class="w3-container w3-white">
@@ -79,7 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
 
     <div id="borderParagraph" class="w3-container w3-white">
-        <p ><b>Utility due in 8 days</b> <input id="paynowButt" type="button" value="Pay now"></p>
+        <p ><b>Utility due in 8 days..</b> <input id="paynowButt" type="button" value="Pay now"></p>
     </div>
 
       <!-- <div class="w3-container w3-white">
@@ -98,9 +99,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
       <img id="whereismymoney" src="http://laavenidanyc.com/wp-content/uploads/2017/05/whereismymoney.png" alt="Me" style="width:100%">
-        <p><b>Lorem Ipsum 4</b></p>
- <p>Location:</p>
-        <p>Date:</p>
+        <p><b>Seems like you paying too much in rent. Learn more about how you can lower your rent! </b></p>
               </div>
     </div>
    <!--  <div class="w3-third w3-container w3-margin-bottom">
@@ -176,9 +175,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
       <img id="tranferhistory" src="http://laavenidanyc.com/wp-content/uploads/2017/05/tranferhistory.png" alt="Me" style="width:125%">
-        <p><b>Lorem Ipsum 4</b></p>
- <p>Location:</p>
-        <p>Date:</p>
               </div>
     </div>
 
@@ -198,36 +194,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <!-- <img id="tranferhistory" src="http://laavenidanyc.com/wp-content/uploads/2017/05/tranferhistory.png" alt="Me"> -->
       <div class="w3-container w3-white">
       <img id="tranferhistory" src="http://laavenidanyc.com/wp-content/uploads/2017/05/tranferhistory.png" alt="Me">
-        <p><b>Lorem Ipsum 4</b></p>
-        <p>Location:</p>
-        <p>Date:</p>
       </div>
     </div>
 
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum 4</b></p>
-        <p>Location:</p>
-        <p>Date:</p>
-      </div>
-    </div>
-
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum 4</b></p>
-        <p>Location:</p>
-        <p>Date:</p>
-      </div>
-    </div>
-
-
-    <div class="w3-third w3-container w3-margin-bottom">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum 4</b></p>
-        <p>Location:</p>
-        <p>Date:</p>
-      </div>
-    </div>
 
   
     <!-- <div class="w6-col m6">
@@ -280,6 +249,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
                         <div class="form-group">
                             <h5 id="contact"><b>Available Credit $ 1 250</b></h5>
+                          <!--   <p id="creditAvailibility">1 250</p> -->
                             <label for="name">
                                 Transfer from account number</label><br/>
                             <center><input type="text" id="creditCardInput" class="form-control" id="name" placeholder="Account number" required="required" /></center>
